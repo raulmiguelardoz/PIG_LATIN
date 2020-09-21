@@ -1,0 +1,23 @@
+def pig_latin(texto):
+    vocales=["a","e","i","o","u","A","E","I","O","U"]
+    traduccion=""
+    texto_spl=texto.split(" ")
+    for txt in texto_spl:
+        if txt[0] in vocales:
+            txt+="way"
+             
+            
+        else:
+            txt=txt[1:]+txt[0]+"ay"
+            
+        traduccion+=" "+txt
+                        
+    print(traduccion)   
+         
+    
+     
+pig_latin('Python')
+pig_latin('School')
+pig_latin('Hello World')
+pig_latin('eat')
+pig_latin('air')
